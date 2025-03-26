@@ -20,6 +20,11 @@ h2 {
     font-size:2rem
 }
 
+main{
+    container{
+margin-top:20%
+}
+}
 /* CUSTOM */
 
 :root {
@@ -35,12 +40,12 @@ h2 {
     max-width: 1000px;
     margin: 0 auto;
     /* debug */
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .flex {
     display: flex;
-    border: 1px dashed purple;
+    /* border: 1px dashed purple; */
 
 }
 
@@ -48,6 +53,10 @@ h2 {
 /* UTILITIES */
 .marginr-10 {
     margin-right:10px;
+}
+
+.margin-top-80 {
+    margin-top:80px;
 }
 
 .margin-top-50 {
@@ -66,6 +75,10 @@ h2 {
     margin-bottom:50px;
 }
 
+.margin-bottom-30 {
+    margin-bottom:30px;
+}
+
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
@@ -73,6 +86,10 @@ h2 {
 .padding-20 {
     padding: 20px;
 
+}
+
+.padding-10 {
+    padding:10px;
 }
 
 
@@ -98,6 +115,10 @@ h2 {
 
 .font-sizebig {
     font-size:1.2rem
+}
+
+.block {
+    display: block;
 }
 
 /* HEADER  */
@@ -161,6 +182,11 @@ nav a {
 
 /* HERO */
 
+
+.piani-e-prezzi h2 {
+    margin-top:20%
+}
+
 .hero {
     background-color: rgba(180,208,230,255);
     margin-top:80px;
@@ -176,20 +202,22 @@ nav a {
 .hero-card {
  justify-content: start;
  align-items: flex-start;
+ padding: 20px;
 }
 .hero-card {
 
 .hero-card-text {
     width:40%;
-    /* debug */
-    background-color: blueviolet;
 }
 
 .hero-card-img {
     width:60%;
 }
-}
 
+.hero-card-img img {
+    margin-bottom:-20%;
+}
+}
 .check-buttons {
 justify-content: flex-start;
 gap:40px;
