@@ -105,7 +105,12 @@ h2 {
 
 header {
     display: flex;
-    position:sticky;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index:99999;
+    background-color: white;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -115,7 +120,6 @@ header {
 .left-block, .right-block {
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 .logo {
@@ -137,17 +141,36 @@ nav a {
     color: black;
 }
 
+.right-block {
+    a {
+        padding:5px;
+    }
+}
+
+.left-block {
+    a {
+        padding:5px;
+    }
+}
+
+
+.start-button {
+    background-color: rgba(0,97,254,255);
+    color: white;
+}
+
 /* HERO */
 
 .hero {
     background-color: rgba(180,208,230,255);
+    margin-top:80px;
 }
 
 .hero-title {
     text-align: center;
-    font-size:3rem;
-    /* debug */
-    border: 1px solid red;
+    font-size:4rem;
+    padding-top:50px;
+    padding-bottom:50px;
 }
 
 .hero-card {
