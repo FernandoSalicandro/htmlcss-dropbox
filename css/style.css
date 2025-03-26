@@ -1,6 +1,6 @@
 /* RESET RULES */
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -8,6 +8,17 @@
 img {
     max-width: 100%
 }
+
+h2 {
+    font-size:2rem
+}
+
+/* CUSTOM */
+
+:root {
+    --headerblock-width--:60%;
+}
+
 
 /* COMMON */
 /* layout */
@@ -18,4 +29,224 @@ img {
     margin: 0 auto;
     /* debug */
     border: 1px dashed black;
+}
+
+.flex {
+    display: flex;
+    border: 1px dashed purple;
+
+}
+
+
+/* UTILITIES */
+.marginr-10 {
+    margin-right:10px;
+}
+
+.margin-top-50 {
+    margin-top:50px;
+}
+
+.margin-top-30 {
+    margin-top:30px;
+}
+
+.margin-top-20 {
+    margin-top:20px;
+}
+
+.margin-bottom-50 {
+    margin-bottom:50px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.padding-20 {
+    padding: 20px;
+
+}
+
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.text-a-center {
+    text-align: center;
+}
+
+/* HEADER  */
+
+
+header {
+    display: flex;
+    position:sticky;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap:50px;
+}
+
+.left-block, .right-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px; /* Modifica in base alle dimensioni del tuo logo */
+    /* height: auto; */
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.left-nav {
+    gap: 10px; /* Aumentato lo spazio tra i link del nav sinistro */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HERO */
+
+.hero {
+    background-color: rgba(180,208,230,255);
+}
+
+.hero-title {
+    text-align: center;
+    font-size:3rem;
+    /* debug */
+    border: 1px solid red;
+}
+
+.hero-card {
+ justify-content: start;
+ align-items: flex-start;
+}
+.hero-card {
+
+.hero-card-text {
+    width:40%;
+    /* debug */
+    background-color: blueviolet;
+}
+
+.hero-card-img {
+    width:60%;
+}
+}
+
+.check-buttons {
+justify-content: flex-start;
+gap:40px;
+}
+
+.circle {
+    margin-right:5px;
+}
+
+
+
+.options-card-title {
+    justify-content: space-between;
+
+}
+.col3-card-single {
+    margin-left:50px;
+}
+
+.col3-card-azienda {
+    margin-right: 50px;
+}
+
+.options {
+    justify-content: space-between;
+    gap:20px;
+    /* debug */
+    height: 500px;
+    border:1px solid grey;
+}
+
+.col3-options {
+    /* debug */
+    height:500px;
+    border:1px solid grey;
+}
+
+.team-contact-title {
+    text-align: center;
+    padding:10px;
+    /* debug */
+    border:1px solid gray;
+}
+
+.team-contact-button {
+    width: 40%;
+}
+
+.team-contact-text {
+    width: 60%;
+}
+
+.partner-contact {
+
+    .partner-contact-img {
+        width: 60%;
+    }
+
+    .partner-contact-text {
+        width: 40%;
+    }
+}
+
+/* SEZIONE FUNZIONALITA' */
+
+.features-cards {
+    flex-wrap: wrap;
+
+}
+.features-details {
+    justify-content: space-between;
+}
+
+.features-card {
+    width:calc(100%/3 - 20px);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* SEZIONE SCOPRI DI PIU */
+.more {
+    margin-bottom: 80px;
+    width:60%;
+    flex-wrap: wrap;
+}
+
+.more h2 {
+    font-size: 1.5rem;
+}
+
+.more a {
+    margin-top:20px;
 }
