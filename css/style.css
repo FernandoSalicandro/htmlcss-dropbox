@@ -1,3 +1,7 @@
+
+
+
+
 /* RESET RULES */
 * {
     margin: 0;
@@ -9,10 +13,12 @@ img {
     max-width: 100%
 }
 
+ul {
+    list-style: none;
+}
 a{
     text-decoration: none;
     color:white;
-
 
 }
 
@@ -31,7 +37,6 @@ margin-top:20%
     --headerblock-width--:60%;
 }
 
-
 /* COMMON */
 /* layout */
 
@@ -49,8 +54,11 @@ margin-top:20%
 
 }
 
-
 /* UTILITIES */
+
+.margin {
+    margin: 10px;
+}
 .marginr-10 {
     margin-right:10px;
 }
@@ -65,6 +73,10 @@ margin-top:20%
 
 .margin-top-30 {
     margin-top:30px;
+}
+
+.margin-bottom-10 {
+    margin-bottom:10px;
 }
 
 .margin-top-20 {
@@ -92,6 +104,9 @@ margin-top:20%
     padding:10px;
 }
 
+.padding-5 {
+    padding:5px;
+}
 
 .padding-top-20 {
     padding-top: 20px;
@@ -113,6 +128,13 @@ margin-top:20%
     text-align: center;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
+.font-size-small {
+font-size: 0.8rem;
+}
 .font-sizebig {
     font-size:1.2rem
 }
@@ -121,8 +143,17 @@ margin-top:20%
     display: block;
 }
 
-/* HEADER  */
+.color-blue {
+    color:blue;
+}
 
+.color-grey {
+    color:grey;
+}
+.text-decor {
+    text-decoration: underline;
+}
+/* HEADER  */
 
 header {
     display: flex;
@@ -174,14 +205,12 @@ nav a {
     }
 }
 
-
 .start-button {
     background-color: rgba(0,97,254,255);
     color: white;
 }
 
 /* HERO */
-
 
 .piani-e-prezzi h2 {
     margin-top:20%
@@ -212,21 +241,31 @@ nav a {
 
 .hero-card-img {
     width:60%;
+    /* position:relative; */
 }
 
 .hero-card-img img {
     margin-bottom:-20%;
 }
 }
+
+ .fa-arrow-down {
+    color:black;
+    font-size: 2rem;
+ }
+
 .check-buttons {
 justify-content: flex-start;
 gap:40px;
 }
 
 .circle {
-    margin-right:5px;
-}
+    margin-right: 5px;
+    color: blue;
+    font-weight: 900;
+    font-size: large;
 
+}
 
 
 .options-card-title {
@@ -234,7 +273,15 @@ gap:40px;
 
 }
 .col3-card-single {
-    margin-left:50px;
+    justify-content: center;
+    padding:10px;
+    border-bottom:1px solid grey;
+}
+
+.col3-card-team {
+    justify-content: center;
+    padding:10px;
+    border-bottom:1px solid grey;
 }
 
 .col3-card-azienda {
@@ -245,15 +292,26 @@ gap:40px;
     justify-content: space-between;
     gap:20px;
     /* debug */
-    height: 500px;
-    border:1px solid grey;
+ 
 }
 
 .col3-options {
     /* debug */
-    height:500px;
+    padding-top:0;
+    display: flex;
+    flex-direction: column;
+    width:calc(100%/3);
     border:1px solid grey;
 }
+
+.col3-options {
+    ul {
+        li{
+           margin-bottom:15px;
+        }
+    }
+}
+
 
 .team-contact-title {
     text-align: center;
@@ -296,7 +354,6 @@ gap:40px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 
 /* SEZIONE SCOPRI DI PIU */
 .more {
@@ -348,3 +405,4 @@ footer {
     margin-top:50px;
     
 }
+
