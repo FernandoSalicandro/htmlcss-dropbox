@@ -1,0 +1,21 @@
+/* RESET RULES */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%
+}
+
+/* COMMON */
+/* layout */
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* debug */
+    border: 1px dashed black;
+}
