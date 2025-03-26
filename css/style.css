@@ -287,3 +287,13 @@ footer {
     line-height: 1.5rem;
     font-size:0.9rem;
 }
+
+/* SELETTORE LINGUA */
+
+.language-selector {
+    border-top:1px solid white;
+    color:white;
+    padding-top:40px;
+    margin-top:50px;
+    
+}
