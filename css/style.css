@@ -9,6 +9,13 @@ img {
     max-width: 100%
 }
 
+a{
+    text-decoration: none;
+    color:white;
+
+
+}
+
 h2 {
     font-size:2rem
 }
@@ -87,6 +94,10 @@ h2 {
 
 .text-a-center {
     text-align: center;
+}
+
+.font-sizebig {
+    font-size:1.2rem
 }
 
 /* HEADER  */
@@ -249,4 +260,30 @@ gap:40px;
 
 .more a {
     margin-top:20px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    /* debug */
+    min-height:350px;
+    
+}
+
+.navlist{
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.navlist ul {
+    margin-top: 50px;
+    /* width: 20%; */
+}
+.navlist ul li {
+    list-style: none;
+    color: white;
+    line-height: 1.5rem;
+    font-size:0.9rem;
 }
