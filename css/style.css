@@ -53,9 +53,11 @@ main {
 
 .flex {
     display: flex;
- 
+ }
 
-}
+ .wrap {
+    flex-wrap:wrap;
+ }
 
 /* UTILITIES */
 /* centering */
@@ -510,6 +512,17 @@ nav a {
     text-decoration: underline;
 }
 
+/* SPONSOR SECTION */
+.sponsor {
+    /* debug */
+    display:flex;
+    background-color: blue;
+}
+
+.col3-sponsor {
+    display:flex;
+    width:calc(100%/3);
+}
 /* FOOTER */
 
 footer {
@@ -540,4 +553,12 @@ footer {
 .language-selector {
 
     color: white;
+}
+
+.max-width50 {
+    max-width: 50%;
+}
+
+.imgh-50 {
+    height: 50%;
 }
