@@ -275,6 +275,20 @@ header nav a:not(.btn-primary):hover {
     position: relative;
 }
 
+.btn-primary:hover {
+    background-color: rgba(0, 97, 254, 0.8);
+}
+
+.btn-primary:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid black;
+}
+
 .noheader-btn-primary {
     background-color: rgba(0, 97, 254, 255);
     color: white;
@@ -290,19 +304,7 @@ header nav a:not(.btn-primary):hover {
     border-radius: 3px;
 }
 
-.btn-primary:hover {
-    background-color: rgba(0, 97, 254, 0.8);
-}
 
-.btn-primary:hover::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -24px;
-    width: 100%;
-    background-color: black;
-    border-bottom: 1px solid black;
-}
 
 /* HERO */
 
@@ -604,6 +606,8 @@ header nav a:not(.btn-primary):hover {
         background-color: rgba(245,245,245,255);
         padding:40px;
         color: grey;
+        aspect-ratio: 1;
+        overflow:auto;
     }
  
     .sponsor-column-center img {
